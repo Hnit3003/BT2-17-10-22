@@ -30,7 +30,7 @@ struct typeArr *nhapThongTin(){
     
     return &arr;
 }
-//------Hàm beDenLon sắp xếp các giá trị từ bé đến lớn - Thuật toán nổi bọt--------
+//------Hàm beDenLon sắp xếp các giá trị từ bé đến lớn - Thuật toán nổi bọt-----------
 struct typeArr beDenLon(struct typeArr *arr){
     int tempt;
     
@@ -45,7 +45,7 @@ struct typeArr beDenLon(struct typeArr *arr){
     }
 }
 
-//------Hàm lonDenBe sắp xếp các giá trị từ lớn đến bé - Thuật toán nổi bọt-------
+//------Hàm lonDenBe sắp xếp các giá trị từ lớn đến bé - Thuật toán nổi bọt-----------
 struct typeArr lonDenBe(struct typeArr *arr){
     int tempt;
 
@@ -60,7 +60,7 @@ struct typeArr lonDenBe(struct typeArr *arr){
     }
 }
 
-//------Hàm button đưa ra các các kết quả tương ứng với lựa chọn------------------
+//------Hàm button đưa ra các các kết quả tương ứng với lựa chọn----------------------
 bool button(int button, struct typeArr *arr){
     switch (button)
     {
