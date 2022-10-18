@@ -20,7 +20,7 @@ struct typeArr *nhapThongTin(){
 
     ptrarr = (int*)malloc(sizearr*sizeof(int));
 
-    for(int i =0; i <sizearr; i++){
+    for(int i =0; i < sizearr; i++){
         printf("[%d] = ", i);
         scanf("%d", &ptrarr[i]);
     }
@@ -35,7 +35,7 @@ struct typeArr beDenLon(struct typeArr *arr){
     int tempt;
     
     for(int i =0; i < arr->size; i++){
-        for(int j = i+1; j < arr->size; j++){
+        for(int j =i+1; j < arr->size; j++){
             if(arr->ptr[j] < arr->ptr[i]){
                 tempt =arr->ptr[j];
                 arr->ptr[j] =arr->ptr[i];
@@ -54,7 +54,7 @@ struct typeArr lonDenBe(struct typeArr *arr){
             if(arr->ptr[i] < arr->ptr[j]){
                 tempt =arr->ptr[i];
                 arr->ptr[i] =arr->ptr[j];
-                arr->ptr[j] = tempt;
+                arr->ptr[j] =tempt;
             }
         }
     }
@@ -102,7 +102,7 @@ int main(){
     unsigned int btn;
 
     printf("\n\nMang da nhap la: \n\t");
-    for (int i = 0; i < test->size; i++){
+    for (int i =0; i < test->size; i++){
         printf("\t[%d] = %d\t", i, test->ptr[i]);
     }
     
